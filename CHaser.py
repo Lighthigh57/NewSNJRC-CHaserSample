@@ -6,9 +6,8 @@ import sys
 class Client:
     def __init__(self):
         self.port = input("Connect port to : ")
-        self.name = "Light"
+        self.name = input("Name : ")
         self.host = input("HostIP : ")
-        self.side = int(input("Cool = 0,Hot = 1 : "))
 
         if not self.__ip_judge(self.host):
             sys.exit(1)
